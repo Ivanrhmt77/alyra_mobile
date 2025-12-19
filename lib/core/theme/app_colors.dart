@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   const AppColors._();
 
-  // ─────────── PRIMARY ───────────
+  // ===== PRIMARY =====
 
   static const Color primary100 = Color(0xFFEBF7FE);
   static const Color primary200 = Color(0xFFBAE5FA);
@@ -27,7 +27,7 @@ class AppColors {
   static const Color primaryAlpha50 = Color(0x803AB4F2);
   static const Color primaryAlpha75 = Color(0xBF3AB4F2);
 
-  // ─────────── SECONDARY ───────────
+  // ===== SECONDARY =====
 
   static const Color secondary100 = Color(0xFFF0EEFA);
   static const Color secondary200 = Color(0xFFCBC6F0);
@@ -51,7 +51,7 @@ class AppColors {
   static const Color secondaryAlpha50 = Color(0x806C5DD3);
   static const Color secondaryAlpha75 = Color(0xBF6C5DD3);
 
-  // ─────────── NEUTRAL ───────────
+  // ===== NEUTRAL =====
 
   static const Color neutral100 = Color(0xFFEEEEEE);
   static const Color neutral200 = Color(0xFFE3E3E3);
@@ -75,7 +75,7 @@ class AppColors {
   static const Color neutralAlpha50 = Color(0x80111111);
   static const Color neutralAlpha75 = Color(0xBF111111);
 
-  // ─────────── ERROR ───────────
+  // ===== ERROR =====
 
   static const Color error100 = Color(0xFFFCEAEA);
   static const Color error200 = Color(0xFFF6B9B8);
@@ -99,7 +99,7 @@ class AppColors {
   static const Color errorAlpha50 = Color(0x80E53935);
   static const Color errorAlpha75 = Color(0xBFE53935);
 
-  // ─────────── WARNING ───────────
+  // ===== WARNING =====
 
   static const Color warning100 = Color(0xFFFFF9EC);
   static const Color warning200 = Color(0xFFFFEBBD);
@@ -123,7 +123,7 @@ class AppColors {
   static const Color warningAlpha50 = Color(0x80FFB300);
   static const Color warningAlpha75 = Color(0xBFFFB300);
 
-  // ─────────── SUCCESS ───────────
+  // ===== SUCCESS =====
 
   static const Color success100 = Color(0xFFCEFFED);
   static const Color success200 = Color(0xFF9BFFDA);
