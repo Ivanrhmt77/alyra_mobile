@@ -1,5 +1,5 @@
+import 'package:alyra_mobile/core/extensions/semantic_colors_extensions.dart';
 import 'package:alyra_mobile/core/extensions/text_styles_extensions.dart';
-import 'package:alyra_mobile/core/themes/app_colors.dart';
 import 'package:alyra_mobile/core/themes/app_padding.dart';
 import 'package:alyra_mobile/core/themes/app_radius.dart';
 import 'package:alyra_mobile/core/themes/app_sizing.dart';
@@ -24,7 +24,7 @@ class FeedPage extends StatelessWidget {
         itemBuilder: (context, index) {
           if (index == 1) {
             return Container(
-              color: AppColors.primary500,
+              color: context.semantic.surface,
               padding: AppPadding.p56,
               child: Text('Ch', style: context.h2()),
             );
@@ -33,14 +33,19 @@ class FeedPage extends StatelessWidget {
               width: AppSizing.w96,
               height: AppSizing.h96,
               decoration: BoxDecoration(
-                color: AppColors.primary500,
+                color: context.semantic.divider,
                 borderRadius: AppRadius.r16,
               ),
-              child: Center(child: Text('Ch')),
+              child: Center(
+                child: Text(
+                  'Ch',
+                  style: context.h7(color: context.semantic.textSecondary),
+                ),
+              ),
             );
           }
           return Container(
-            color: AppColors.primary500,
+            color: context.semantic.surface,
             padding: AppPadding.p56,
             child: Text('Ch', style: AppTextStyles.h2(context)),
           );
