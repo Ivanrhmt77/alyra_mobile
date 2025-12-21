@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'responsive.dart';
+import '../utils/responsive.dart';
 
 class AppTextStyles {
   const AppTextStyles._();

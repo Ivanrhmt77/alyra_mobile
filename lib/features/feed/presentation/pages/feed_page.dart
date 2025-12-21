@@ -1,0 +1,51 @@
+import 'package:alyra_mobile/core/extensions/text_styles_extensions.dart';
+import 'package:alyra_mobile/core/themes/app_colors.dart';
+import 'package:alyra_mobile/core/themes/app_padding.dart';
+import 'package:alyra_mobile/core/themes/app_radius.dart';
+import 'package:alyra_mobile/core/themes/app_sizing.dart';
+import 'package:alyra_mobile/core/themes/app_spacing.dart';
+import 'package:alyra_mobile/core/themes/app_text_styles.dart';
+import 'package:flutter/material.dart';
+
+class FeedPage extends StatelessWidget {
+  const FeedPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Feed')),
+      body: ListView.separated(
+        padding: AppPadding.pxy(
+          horizontal: AppSizing.w24,
+          vertical: AppSizing.h32,
+        ),
+        itemCount: 9,
+        separatorBuilder: (context, index) => SizedBox(height: AppSpacing.s24),
+        itemBuilder: (context, index) {
+          if (index == 1) {
+            return Container(
+              color: AppColors.primary500,
+              padding: AppPadding.p56,
+              child: Text('Ch', style: context.h2()),
+            );
+          } else if (index == 2) {
+            return Container(
+              width: AppSizing.w96,
+              height: AppSizing.h96,
+              decoration: BoxDecoration(
+                color: AppColors.primary500,
+                borderRadius: AppRadius.r16,
+              ),
+              child: Center(child: Text('Ch')),
+            );
+          }
+          return Container(
+            color: AppColors.primary500,
+            padding: AppPadding.p56,
+            child: Text('Ch', style: AppTextStyles.h2(context)),
+          );
+        },
+      ),
+    );
+  }
+}

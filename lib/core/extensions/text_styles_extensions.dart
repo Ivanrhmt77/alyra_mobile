@@ -1,4 +1,4 @@
-import 'package:alyra_mobile/core/theme/app_text_styles.dart';
+import 'package:alyra_mobile/core/themes/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 extension TextStylesExtensions on BuildContext {

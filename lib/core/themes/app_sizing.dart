@@ -1,9 +1,10 @@
-import 'package:alyra_mobile/core/theme/responsive.dart';
+import 'package:alyra_mobile/core/utils/responsive.dart';
 
 class AppSizing {
   const AppSizing._();
 
-  // ===== WIDTH (horizontal sizing) =====
+  // ===== WIDTH =====
+  static double get w2 => Responsive.w(2);
   static double get w4 => Responsive.w(4);
   static double get w8 => Responsive.w(8);
   static double get w12 => Responsive.w(12);
@@ -42,7 +43,8 @@ class AppSizing {
   static double get w384 => Responsive.w(384);
   static double get w400 => Responsive.w(400);
 
-  // ===== HEIGHT (vertical sizing) =====
+  // ===== HEIGHT =====
+  static double get h2 => Responsive.h(2);
   static double get h4 => Responsive.h(4);
   static double get h8 => Responsive.h(8);
   static double get h12 => Responsive.h(12);
