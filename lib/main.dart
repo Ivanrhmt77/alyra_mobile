@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Alyra Mobile',
-          theme: AppTheme.dark(),
+          theme: AppTheme.light(),
           initialRoute: AppRoutes.feed,
           onGenerateRoute: AppRouter.generate,
         );

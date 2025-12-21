@@ -16,7 +16,7 @@ class AppTheme {
         error: AppColors.error500,
         onError: AppColors.neutral100,
         surface: AppColors.neutral900,
-        onSurface: AppColors.neutral100,
+        onSurface: AppColors.neutral300,
       ),
       useMaterial3: true,
     );
@@ -34,7 +34,7 @@ class AppTheme {
         error: AppColors.error500,
         onError: AppColors.neutral1000,
         surface: AppColors.neutral200,
-        onSurface: AppColors.neutral1000,
+        onSurface: AppColors.neutral700,
       ),
       useMaterial3: true,
     );
