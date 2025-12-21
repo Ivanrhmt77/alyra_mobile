@@ -32,9 +32,9 @@ class AppTheme {
         secondary: AppColors.secondary500,
         onSecondary: AppColors.neutral1000,
         error: AppColors.error500,
-        onError: AppColors.neutral1000,
+        onError: AppColors.neutral100,
         surface: AppColors.neutral200,
-        onSurface: AppColors.neutral700,
+        onSurface: AppColors.neutral800,
       ),
       useMaterial3: true,
     );
