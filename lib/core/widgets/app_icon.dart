@@ -4,11 +4,17 @@ import 'package:flutter/material.dart';
 
 class AppIcon extends StatelessWidget {
   final IconData icon;
-  final double? fill;
-  final Color? color;
+  final bool active;
   final double? size;
+  final Color? color;
 
-  const AppIcon(this.icon, {super.key, this.fill = 0, this.color, this.size});
+  const AppIcon(
+    this.icon, {
+    super.key,
+    this.active = false,
+    this.size,
+    this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +24,8 @@ class AppIcon extends StatelessWidget {
         fontFamily: 'MaterialSymbolsRounded',
         fontPackage: 'material_symbols_icons',
       ),
-      fill: fill,
-      size: size ?? AppSizing.w48,
+      fill: active ? 1 : 0,
+      size: size ?? AppSizing.w24,
       weight: 200,
       grade: 0,
       opticalSize: 24,

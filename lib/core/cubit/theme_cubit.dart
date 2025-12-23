@@ -1,12 +1,6 @@
+import 'package:alyra_mobile/core/cubit/theme_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
-
-enum AppThemeMode { system, light, dark }
-
-class ThemeState {
-  final AppThemeMode mode;
-  const ThemeState(this.mode);
-}
 
 class ThemeCubit extends Cubit<ThemeState> {
   ThemeCubit() : super(const ThemeState(AppThemeMode.system));

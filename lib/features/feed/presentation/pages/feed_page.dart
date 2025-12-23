@@ -1,3 +1,4 @@
+import 'package:alyra_mobile/config/routes/app_routes.dart';
 import 'package:alyra_mobile/core/extensions/semantic_colors_extensions.dart';
 import 'package:alyra_mobile/core/extensions/text_styles_extensions.dart';
 import 'package:alyra_mobile/core/themes/app_padding.dart';
@@ -13,7 +14,16 @@ class FeedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Feed')),
+      appBar: AppBar(
+        title: const Text('Feed'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: () =>
+                Navigator.pushNamed(context, AppRoutes.notification),
+          ),
+        ],
+      ),
       body: ListView.separated(
         padding: AppPadding.pxy(
           horizontal: AppSizing.w24,

@@ -1,4 +1,8 @@
+import 'package:alyra_mobile/config/routes/app_routes.dart';
 import 'package:alyra_mobile/core/cubit/theme_cubit.dart';
+import 'package:alyra_mobile/core/cubit/theme_state.dart';
+import 'package:alyra_mobile/core/extensions/semantic_colors_extensions.dart';
+import 'package:alyra_mobile/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:alyra_mobile/core/extensions/text_styles_extensions.dart';
@@ -44,6 +48,20 @@ class SettingPage extends StatelessWidget {
                   onChanged: (mode) {
                     if (mode != null) themeCubit.setMode(mode);
                   },
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: context.semantic.surface,
+                  ),
+                  onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    AppRoutes.login,
+                    (route) => false,
+                  ),
+                  child: Text(
+                    "Log out",
+                    style: context.body1(color: AppColors.error500),
+                  ),
                 ),
               ],
             );

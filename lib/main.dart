@@ -1,6 +1,7 @@
 import 'package:alyra_mobile/config/routes/app_router.dart';
 import 'package:alyra_mobile/config/routes/app_routes.dart';
 import 'package:alyra_mobile/core/cubit/theme_cubit.dart';
+import 'package:alyra_mobile/core/cubit/theme_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/themes/app_theme.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.light(),
           darkTheme: AppTheme.dark(),
           themeMode: context.read<ThemeCubit>().themeMode,
-          initialRoute: AppRoutes.setting,
+          initialRoute: AppRoutes.login,
           onGenerateRoute: AppRouter.generate,
         );
       },
