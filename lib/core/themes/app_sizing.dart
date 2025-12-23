@@ -1,0 +1,85 @@
+import 'package:alyra_mobile/core/utils/responsive.dart';
+
+class AppSizing {
+  const AppSizing._();
+
+  // ===== WIDTH =====
+  static double get w2 => Responsive.w(2);
+  static double get w4 => Responsive.w(4);
+  static double get w8 => Responsive.w(8);
+  static double get w12 => Responsive.w(12);
+  static double get w16 => Responsive.w(16);
+  static double get w20 => Responsive.w(20);
+  static double get w24 => Responsive.w(24);
+  static double get w28 => Responsive.w(28);
+  static double get w32 => Responsive.w(32);
+  static double get w36 => Responsive.w(36);
+  static double get w40 => Responsive.w(40);
+  static double get w48 => Responsive.w(48);
+  static double get w56 => Responsive.w(56);
+  static double get w64 => Responsive.w(64);
+  static double get w72 => Responsive.w(72);
+  static double get w80 => Responsive.w(80);
+  static double get w96 => Responsive.w(96);
+  static double get w104 => Responsive.w(104);
+  static double get w112 => Responsive.w(112);
+  static double get w120 => Responsive.w(120);
+  static double get w128 => Responsive.w(128);
+  static double get w144 => Responsive.w(144);
+  static double get w160 => Responsive.w(160);
+  static double get w176 => Responsive.w(176);
+  static double get w192 => Responsive.w(192);
+  static double get w208 => Responsive.w(208);
+  static double get w224 => Responsive.w(224);
+  static double get w240 => Responsive.w(240);
+  static double get w256 => Responsive.w(256);
+  static double get w272 => Responsive.w(272);
+  static double get w288 => Responsive.w(288);
+  static double get w304 => Responsive.w(304);
+  static double get w320 => Responsive.w(320);
+  static double get w336 => Responsive.w(336);
+  static double get w352 => Responsive.w(352);
+  static double get w368 => Responsive.w(368);
+  static double get w384 => Responsive.w(384);
+  static double get w400 => Responsive.w(400);
+
+  // ===== HEIGHT =====
+  static double get h2 => Responsive.h(2);
+  static double get h4 => Responsive.h(4);
+  static double get h8 => Responsive.h(8);
+  static double get h12 => Responsive.h(12);
+  static double get h16 => Responsive.h(16);
+  static double get h20 => Responsive.h(20);
+  static double get h24 => Responsive.h(24);
+  static double get h28 => Responsive.h(28);
+  static double get h32 => Responsive.h(32);
+  static double get h36 => Responsive.h(36);
+  static double get h40 => Responsive.h(40);
+  static double get h48 => Responsive.h(48);
+  static double get h56 => Responsive.h(56);
+  static double get h64 => Responsive.h(64);
+  static double get h72 => Responsive.h(72);
+  static double get h80 => Responsive.h(80);
+  static double get h96 => Responsive.h(96);
+  static double get h104 => Responsive.h(104);
+  static double get h112 => Responsive.h(112);
+  static double get h120 => Responsive.h(120);
+  static double get h128 => Responsive.h(128);
+  static double get h144 => Responsive.h(144);
+  static double get h160 => Responsive.h(160);
+  static double get h176 => Responsive.h(176);
+  static double get h192 => Responsive.h(192);
+  static double get h208 => Responsive.h(208);
+  static double get h224 => Responsive.h(224);
+  static double get h240 => Responsive.h(240);
+  static double get h256 => Responsive.h(256);
+  static double get h272 => Responsive.h(272);
+  static double get h288 => Responsive.h(288);
+  static double get h304 => Responsive.h(304);
+  static double get h320 => Responsive.h(320);
+  static double get h336 => Responsive.h(336);
+  static double get h352 => Responsive.h(352);
+  static double get h368 => Responsive.h(368);
+  static double get h384 => Responsive.h(384);
+  static double get h400 => Responsive.h(400);
+}

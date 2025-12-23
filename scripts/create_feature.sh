@@ -18,20 +18,24 @@ fi
 echo "🚀 Creating feature: $FEATURE_NAME"
 
 mkdir -p \
-  $BASE_PATH/cubit \
   $BASE_PATH/data/datasources \
   $BASE_PATH/data/models \
+  $BASE_PATH/data/repositories \
   $BASE_PATH/domain/entities \
   $BASE_PATH/domain/repositories \
+  $BASE_PATH/domain/usecases \
+  $BASE_PATH/presentation/cubit \
   $BASE_PATH/presentation/pages \
   $BASE_PATH/presentation/widgets
 
 touch \
-  $BASE_PATH/cubit/.gitkeep \
   $BASE_PATH/data/datasources/.gitkeep \
   $BASE_PATH/data/models/.gitkeep \
+  $BASE_PATH/data/repositories/.gitkeep \
   $BASE_PATH/domain/entities/.gitkeep \
   $BASE_PATH/domain/repositories/.gitkeep \
+  $BASE_PATH/domain/usecases/.gitkeep \
+  $BASE_PATH/presentation/cubit/.gitkeep \
   $BASE_PATH/presentation/pages/.gitkeep \
   $BASE_PATH/presentation/widgets/.gitkeep
 
